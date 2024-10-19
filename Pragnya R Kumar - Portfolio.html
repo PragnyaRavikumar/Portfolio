@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)file:///C:/Users/pragn/Downloads/portfolio.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pragnya R Kumar - Portfolio</title>
+    <link rel="stylesheet" href="./Pragnya R Kumar - Portfolio_files/portfolio.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Pragnya R Kumar</h1>
+            <p>BTech Student | Aspiring Web Developer | Tech Enthusiast</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="fade-in visible">
+        <div class="container">
+            <img src="./Pragnya R Kumar - Portfolio_files/mypicture3.jpeg" alt="Pragnya R Kumar">
+            <h2>About Me</h2>
+            <p>Hello! I'm Pragnya, a BTech student at RNS Institute of Technology. I have experience in web development and SQL, and I'm passionate about technology and innovation. I love working on projects that solve real-world problems.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="fade-in visible">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML &amp; CSS</li>
+                <li>JavaScript</li>
+                <li>SQL</li>
+                <li>Web Development</li>
+                <li>Python</li>
+                <li>Java</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="fade-in visible">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Tourism Analysis Graph</h3>
+                <p>An interactive data visualization project showcasing tourism statistics using Python and data analytics.</p>
+                <figure>
+                <img src="./Pragnya R Kumar - Portfolio_files/dvp2.jpg" alt="Tourism Analysis Graph">
+                <figcaption>This image shows the tourism Analysis Graph</figcaption>
+            </figure>
+            </div>
+            <div class="project">
+                <h3>Airlines Management System</h3>
+                <p>A comprehensive system to manage airline operations, built using SQL and Python.</p>
+                <figure>
+                <img src="./Pragnya R Kumar - Portfolio_files/dbms1.jpg" alt="Login Page">
+                <figcaption>Login page</figcaption>
+                </figure>
+                <figure>
+                <img src="./Pragnya R Kumar - Portfolio_files/dbms2.png" alt="CRUD operations">
+                <figcaption>CRUD operations</figcaption>
+                </figure>
+                <figure>
+                <img src="./Pragnya R Kumar - Portfolio_files/dbms3.jpg" alt="Read operations">
+                <figcaption>Read operations</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="fade-in visible">
+        <div class="container">
+            <h2>Resume</h2>
+            <a href="file:///C:/Users/pragn/Downloads/resume2.pdf" download="">Download My Resume</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="fade-in visible">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:pragnyaravikumar@gmail.com">pragnyaravikumar@gmail.com</a></p>
+            <p>Phone: +91-8310058324</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2024 Pragnya R Kumar</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Scroll-triggered Animations -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const elements = document.querySelectorAll('.fade-in');
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            elements.forEach(el => observer.observe(el));
+        });
+    </script>
+
+
+</body></html>
